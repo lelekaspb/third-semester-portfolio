@@ -5,9 +5,13 @@ const view = (function () {
     link: ".text_container h2 a",
     description: ".text_container p",
     technologiesParent: ".text_container ul",
+    title: "head title",
   };
 
   function renderProject(projectObject) {
+    document.querySelector(DOMStrings.title).textContent = capitalize(
+      projectObject.name
+    );
     document.querySelector(DOMStrings.header).textContent = projectObject.name;
     document.querySelector(DOMStrings.image).src = projectObject.imageSrc;
     if (projectObject.name === "color palette") {
@@ -27,6 +31,10 @@ const view = (function () {
     const elem = document.createElement("li");
     elem.textContent = string;
     return elem;
+  }
+
+  function capitalize(text) {
+    return text.substring(0, 1).toUpperCase() + text.substring(1).toLowerCase();
   }
 
   return {
