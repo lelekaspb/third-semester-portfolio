@@ -8,9 +8,12 @@ const view = (function () {
   };
 
   function renderProject(projectObject) {
-    console.log(projectObject);
     document.querySelector(DOMStrings.header).textContent = projectObject.name;
     document.querySelector(DOMStrings.image).src = projectObject.imageSrc;
+    if (projectObject.name === "color palette") {
+      document.querySelector(DOMStrings.image).style.objectPosition =
+        "left bottom";
+    }
     document.querySelector(DOMStrings.link).href = projectObject.link;
     document.querySelector(DOMStrings.description).innerHTML =
       projectObject.overview;

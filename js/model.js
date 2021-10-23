@@ -36,15 +36,15 @@ const model = (function () {
       name: "simple CRM system",
       imageSrc: "assets/images/crm.jpg",
       overview:
-        "Probably the most interesting project I have had so far. User adds bids, the app stores them in Local Storage, renders them on a separate page along with calculating and displaying bids' numbers in every category. When filtering, type of bids and category cross-reference triggering re-render of bids. Users can also edit bids; that would trigger Local Storage update, re-calculating budges with numbers of bids for every category and re-displaying those. Individual project.",
+        "Probably the most interesting project I have had so far. User adds bids, the app stores them in Local Storage, renders them on a separate page along with calculating and displaying bids' quantities in every category. When filtering, type of bids and category cross-reference triggering re-render of bids. Users can also edit bids; that would trigger Local Storage update, re-calculating budges with numbers of bids for every category and re-displaying those. Individual project.",
       technology: ["HTML", "JS", "MVC pattern", "localStorage"],
-      link: "",
+      link: "https://lelekaspb.github.io/crm/",
     },
     hogwarts: {
       name: "hogwarts student list",
       imageSrc: "assets/images/hogwarts.jpg",
       overview:
-        "A very interesting and challenging individual project. The app fetches two files with the use of Asynchronous JavaScript functions, corrects students' names, constructs image sources, calculates blood statuses, and displays it all in browser. In addition, the app allows users to search, filter, and sort students. The most challenging part of the assignment was to implement a function that would hack the system. The function can be called from the console or by typing the 'hackit' while app is open in browser. It adds myself as a student and won't allow my expelling, it also randomizes blood statuses and makes sure that students added to the inquisitorial squad after hacking, will be removed again after 20 seconds.",
+        "A very interesting and challenging individual project. The app fetches two files with the use of Asynchronous JavaScript functions, corrects students' names, constructs image sources, calculates blood statuses, and displays it all in browser. In addition, the app allows users to search, filter, and sort students. The most challenging part of the assignment was to implement a function that would hack the system. The function can be called from the console (hackTheSystem();) or by typing 'hackit' while app is open in browser. It adds myself as a student and won't allow my expelling, it also randomizes blood statuses and makes sure that students added to the inquisitorial squad after hacking, will be removed again after 20 seconds.",
       technology: ["HTML", "CSS", "JS"],
       link: "https://lelekaspb.github.io/hogwarts-list/",
     },

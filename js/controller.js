@@ -5,12 +5,4 @@ const controller = (function (data, ui) {
   const project = urlParams.get("project");
 
   ui.renderProject(data.projects[project]);
-
-  return {
-    init: function () {
-      console.log("hello");
-    },
-  };
 })(model, view);
-
-controller.init();
