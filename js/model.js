@@ -37,7 +37,15 @@ const model = (function () {
       imageSrc: "assets/images/crm.jpg",
       overview:
         "Probably the most interesting project I have had so far. User adds bids, the app stores them in Local Storage, renders them on a separate page along with calculating and displaying bids' quantities in every category. When filtering, type of bids and category cross-reference triggering re-render of bids. Users can also edit bids; that would trigger Local Storage update, re-calculating budges with numbers of bids for every category and re-displaying those. Individual project.",
-      technology: ["HTML", "JS", "MVC pattern", "localStorage"],
+      technology: [
+        "HTML",
+        "CSS",
+        "JS",
+        "MVC pattern",
+        "localStorage",
+        "URL parameters",
+        "ES5 modules",
+      ],
       link: "https://lelekaspb.github.io/crm/",
     },
     hogwarts: {
