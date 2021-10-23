@@ -27,6 +27,17 @@ body.front {
   font-size: 48px;
   line-height: 0;
   margin: 20px;
+  opacity: 0;
+  transform: matrix3d(1, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, 0, -50, -50, 1);
+  transform-origin: 50% 50% 0px;
+  animation: appear 3s 1 forwards ease;
+}
+
+@keyframes appear {
+  100% {
+    opacity: 1;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
 }
 
 @media screen and (max-width: 720px) {
@@ -39,6 +50,14 @@ body.front {
   font-weight: 300;
   font-size: 1rem;
   color: #bbbbbb;
+  opacity: 0;
+  transform: matrix(1, 0, 0, 1, -32, 0);
+  animation: appear 3s 2s 1 forwards ease;
+}
+
+.icons {
+  margin: auto;
+  padding: 10px 0;
 }
 
 .icon {
@@ -58,6 +77,16 @@ body.front {
   box-shadow: 0px 0px 15px #fff;
 }
 
+.icon a {
+  width: 100%;
+  height: 100%;
+  /* cursor: pointer; */
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .icon img {
   /* max-width: 1rem; */
   width: 1em;
@@ -67,7 +96,7 @@ body.front {
 .about {
   margin: auto;
   padding-top: 30px;
-  /* background: #222 -webkit-gradient(
+  background: #222 -webkit-gradient(
       linear,
       left top,
       right top,
@@ -75,8 +104,9 @@ body.front {
       to(#222),
       color-stop(0.5, #fff)
     ) 0 0 no-repeat;
-  background-size: 200px;
-  -webkit-background-size: 200px;
+  background-size: 100px;
+  -webkit-background-size: 100px;
+  color: rgba(255, 255, 255, 0.3);
   background-clip: text;
   -webkit-background-clip: text;
   animation-name: shine;
@@ -84,9 +114,9 @@ body.front {
   animation-duration: 4s;
   -webkit-animation-duration: 4s;
   animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite; */
-  color: rgba(255, 255, 255, 0.3);
-  text-shadow: 0 0px 0px rgb(255 255 255 / 30%);
+  -webkit-animation-iteration-count: infinite;
+  text-shadow: 0 0px 0px rgba(255, 255, 255, 0.3);
+  text-align: center;
 }
 
 .about a {
@@ -95,25 +125,40 @@ body.front {
   text-decoration: none;
 }
 
-/* @keyframes shine {
+@-webkit-keyframes shine {
   0%,
   10% {
-    background-position: -100px;
+    background-position: -1000px;
   }
-  20% {
+  50% {
     background-position: top left;
   }
-  90% {
+  70% {
     background-position: top right;
   }
   100% {
-    background-position: 100px;
+    background-position: 1000px;
   }
+}
 
-} */
+@keyframes shine {
+  0%,
+  10% {
+    background-position: -1000px;
+  }
+  50% {
+    background-position: top left;
+  }
+  70% {
+    background-position: top right;
+  }
+  100% {
+    background-position: 1000px;
+  }
+}
 
 /* about page */
-body.about {
+body#about {
   width: 100vw;
   min-height: 100vh;
   color: #eee;
@@ -270,7 +315,6 @@ body.projects {
 .block img {
   height: 100%;
   width: 100%;
-  /* object-fit: cover; */
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
@@ -387,7 +431,6 @@ body.project_page {
 
 .project_container h2 {
   text-align: center;
-  /* margin: 3% 10%; */
   color: #eee;
   font-size: 35px;
   font-weight: 500;
@@ -419,7 +462,8 @@ body.project_page {
 
 @media screen and (max-width: 425px) {
   .project {
-    width: 90%;
+    width: 100%;
+    padding-top: 10%;
   }
 }
 
