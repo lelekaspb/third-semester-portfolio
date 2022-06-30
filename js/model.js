@@ -102,7 +102,8 @@ const model = (function () {
       overview:
         "Dashboard to help Foobar staff to manage bar operations. The app fetches data every 5 seconds in order to keep the staff updated on beer taps, storage, amount of orders in queue, and what bartenders are doing at the moment.",
       technology: [
-        "JavaScript",
+        "HTML",
+        "JS",
         "ES6 JS modules",
         "JS classes",
         "Tailwind",
