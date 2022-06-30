@@ -36,7 +36,7 @@ const model = (function () {
       name: "simple CRM system",
       imageSrc: "assets/images/crm.jpg",
       overview:
-        "Probably the most interesting project I have had so far. User adds bids, the app stores them in Local Storage, renders them on a separate page along with calculating and displaying bids' quantities in every category. When filtering, type of bids and category cross-reference triggering re-render of bids. Users can also edit bids; that would trigger Local Storage update, re-calculating budges with numbers of bids for every category and re-displaying those. Individual project.",
+        "Very interesting project. User adds bids, the app stores them in Local Storage, renders them on a separate page along with calculating and displaying bids' quantities in every category. When filtering, type of bids and category cross-reference triggering re-render of bids. Users can also edit bids; that would trigger Local Storage update, re-calculating budges with numbers of bids for every category and re-displaying those. Individual project.",
       technology: [
         "HTML",
         "CSS",
@@ -79,6 +79,36 @@ const model = (function () {
         "A collaborative blogging site where visitors can create new posts and comment on posts. Posts need to be approved before showing on the site. Individual project.",
       technology: ["HTML", "CSS", "JS"],
       link: "https://lelekaspb.github.io/blogging_site/",
+    },
+    wildorchid: {
+      name: "a beauty salon website",
+      imageSrc: "assets/images/wildorchid.jpg",
+      overview:
+        "Website for a beauty salon Wild Orchid. The website is made in two languages with the use of React INTL library. Using AJAX requests, the app posts information gathered from forms into restdb and sends notification emails to Wild Orchid.",
+      technology: ["React.js", "CSS modules", "React INTL", "React Router DOM"],
+      link: "https://resilient-custard-075d47.netlify.app/",
+    },
+    foobar: {
+      name: "ordering form Foobar",
+      imageSrc: "assets/images/foobar.jpg",
+      overview:
+        "A beer ordering form for an imaginary bar Foobar. The app is meant to be installed on tablets at every table in the bar so that customers can order beer without getting up. The app fetches beer data from backend, and after a user order beer and pay, it posts order into backend. ",
+      technology: ["React.js", "SASS", "React Router DOM"],
+      link: "https://upbeat-jepsen-337af2.netlify.app/",
+    },
+    foobardash: {
+      name: "staff dashboard Foobar",
+      imageSrc: "assets/images/foobardash.jpg",
+      overview:
+        "Dashboard to help Foobar staff to manage bar operations. The app fetches data every 5 seconds in order to keep the staff updated on beer taps, storage, amount of orders in queue, and what bartenders are doing at the moment.",
+      technology: [
+        "JavaScript",
+        "ES6 JS modules",
+        "JS classes",
+        "Tailwind",
+        "Vite",
+      ],
+      link: "https://sensational-cranachan-1dd2f5.netlify.app/",
     },
   };
 
