@@ -6,6 +6,7 @@ const view = (function () {
     description: ".text_container p",
     technologiesParent: ".text_container ul",
     title: "head title",
+    repository: ".text_container a.repository",
   };
 
   function renderProject(projectObject) {
@@ -25,6 +26,8 @@ const view = (function () {
       const element = createListElement(tech);
       document.querySelector(DOMStrings.technologiesParent).append(element);
     });
+    document.querySelector(DOMStrings.repository).href =
+      projectObject.repository;
   }
 
   function createListElement(string) {

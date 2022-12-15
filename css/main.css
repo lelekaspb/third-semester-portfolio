@@ -513,7 +513,7 @@ body.project_page {
 .text_container p {
   line-height: 1.75em;
   color: #ddd;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   font-weight: 300;
 }
 
@@ -524,4 +524,12 @@ body.project_page {
   padding: 10px;
   margin: 10px;
   font-weight: 300;
+}
+
+.repository {
+  font-size: 14px;
+  color: #ddd;
+  font-weight: 300;
+  font-style: italic;
+  text-decoration: none;
 }
