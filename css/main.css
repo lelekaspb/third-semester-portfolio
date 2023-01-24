@@ -10,6 +10,18 @@ body {
   margin: 0;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
+/* ::-webkit-scrollbar-track {
+  background: linear-gradient(200deg, #003, rgb(65, 43, 21)) no-repeat center;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(200deg, #003, rgb(65, 43, 21)) no-repeat center;
+  border-radius: 25px;
+}
+::-webkit-scrollbar-thumb:hover {} */
+
 body.front {
   width: 100vw;
   height: 100vh;
@@ -117,6 +129,7 @@ body.front {
   -webkit-animation-iteration-count: infinite;
   text-shadow: 0 0px 0px rgba(255, 255, 255, 0.3);
   text-align: center;
+  overflow-x: hidden;
 }
 
 .about a {
@@ -159,7 +172,7 @@ body.front {
 
 /* about page */
 body#about {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   color: #eee;
 }
