@@ -26,14 +26,14 @@ const model = (function () {
       link: "https://lelekaspb.github.io/calculator/",
       repository: "https://github.com/lelekaspb/calculator",
     },
-    palette: {
-      name: "color palette",
-      imageSrc: "assets/images/color_palette.jpg",
+    travldest: {
+      name: "travel destinations",
+      imageSrc: "assets/images/travldest.jpg",
       overview:
-        "Individual assignment with a focus on code planning and design. Here I got to practice functions with parameters and return values, building activity diagram before starting to code, DRY principle of coding, and separation of concerns.",
-      technology: ["HTML", "CSS", "JS"],
-      link: "https://lelekaspb.github.io/color-selector/color_palette.html",
-      repository: "https://github.com/lelekaspb/color-selector",
+        "Study project where I got to learn to create API with endpoints including protected endpoints with the use of JWT package. Basics of the MVC pattern were applied, and here I also learned to upload images from frontend to backens, and, then, to Cloudinary storage.",
+      technology: ["HTML", "CSS", "JS", "Node.js", "Express.js", "JWT"],
+      link: "https://shiny-nougat-0551c4.netlify.app",
+      repository: "https://github.com/lelekaspb/travel-destinations-backend",
     },
     crm: {
       name: "simple CRM system",
