@@ -38,6 +38,7 @@ const model = (function () {
         "Node.js",
         "Express.js",
         "JWT",
+        "bcrypt",
         "Multer",
         "Cloudinary",
         "MongoDB",
@@ -147,6 +148,23 @@ const model = (function () {
       technology: ["HTML", "CSS", "JS"],
       link: "https://lelekaspb.github.io/rescue_the_kitten_game/",
       repository: "https://github.com/lelekaspb/rescue_the_kitten_game",
+    },
+    daos: {
+      name: "Musik samspil",
+      imageSrc: "assets/images/daos2.jpg",
+      overview:
+        "Study project. Full-stack SPA application where musicians and ensembles can find each other. Musicians can create orchestras and posts as individuals and on behalf of orchestras. The users can only edit and delete the orchestras and posts that they created themselves. They can join and leave orchestras, change passwords, and delete and edit their own profile. In addition, server-side validation is added: there cannot be two users with the same email, users must provide the correct email and password in order to sign in, and required form fields must be present in order for requests to be fulfilled.",
+      technology: [
+        "React",
+        "Node.js",
+        "Nest.js",
+        "JWT",
+        "bcrypt",
+        "MongoDB",
+        "Mongoose",
+      ],
+      link: "https://teal-liger-63857f.netlify.app/",
+      repository: "https://github.com/lelekaspb/daos-backend",
     },
   };
 
