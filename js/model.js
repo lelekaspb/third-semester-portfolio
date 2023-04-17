@@ -155,6 +155,7 @@ const model = (function () {
       overview:
         "Study project. Full-stack SPA application where musicians and ensembles can find each other. Musicians can create orchestras and posts as individuals and on behalf of orchestras. The users can only edit and delete the orchestras and posts that they created themselves. They can join and leave orchestras, change passwords, and delete and edit their own profile. In addition, server-side validation is added: there cannot be two users with the same email, users must provide the correct email and password in order to sign in, and required form fields must be present in order for requests to be fulfilled.",
       technology: [
+        "TypeScript",
         "React",
         "Node.js",
         "Nest.js",
