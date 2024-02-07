@@ -171,7 +171,7 @@ const model = (function () {
       name: "Online shop",
       imageSrc: "assets/images/wildshop.png",
       overview:
-        "Final project for the Bachelor degree in Web development. It is an online shop with CMS made to serve up to 600 products. On the webshop, users can see products that are in stock as well as products that are sold out. Products in stock can be added to the shopping cart but not in quantity higher than there is in the stock. Sold out products can be subscribed to, meaning that users can ask to be notified when the product is back in stock. The project utilizes Sanity's query language GROQ for retrieving information about products from the Sanity databse, and Sanity's HTTP Mutations API for posting and updating information into the database (such as create order or subcribe to a sold out product).",
+        "Final project for the Bachelor's degree in Web development. It is an online shop with CMS made to serve up to 600 products. On the webshop, users can see products that are in stock as well as products that are sold out. Products in stock can be added to the shopping cart but not in quantity higher than there is in the stock. Sold-out products can be subscribed to, meaning that users can ask to be notified when the product is back in stock. The project utilizes Sanity's query language GROQ for retrieving information about products from the Sanity database, and Sanity's HTTP Mutations API for posting and updating information into the database (such as creating orders or subscribing to a sold-out product).",
       technology: [
         "Next.js",
         "TypeScript",
