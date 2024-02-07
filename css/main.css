@@ -330,6 +330,7 @@ body.projects {
   width: 100%;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
+  object-fit: cover;
 }
 
 .overlay span {
