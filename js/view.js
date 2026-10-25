@@ -110,6 +110,7 @@ const view = (function () {
       imageLink,
       createElement("h3", "", project.title),
       createElement("p", "", project.summary),
+      createElement("p", "project_role", project.role),
       chips,
       links
     );

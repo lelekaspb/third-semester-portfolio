@@ -150,7 +150,7 @@ p {
 }
 
 .hero_photo {
-  height: 300px;
+  aspect-ratio: 1843 / 1024;
   overflow: hidden;
   border: 1px solid var(--border);
   border-radius: var(--radius-card);
@@ -193,7 +193,7 @@ p {
 }
 
 .project_image {
-  height: 136px;
+  aspect-ratio: 16 / 9;
   display: block;
   overflow: hidden;
   margin-bottom: 10px;
@@ -228,6 +228,20 @@ p {
   margin-bottom: 8px;
   color: var(--muted);
   font-size: 14px;
+}
+
+.project_card .project_role {
+  color: var(--ink);
+  font-size: 13px;
+}
+
+.noscript_message {
+  margin: 32px 0;
+  padding: 24px;
+}
+
+.noscript_message h1 {
+  font-size: 32px;
 }
 
 .chips {
@@ -381,7 +395,6 @@ p {
   }
 
   .hero_photo {
-    height: 280px;
     grid-row: 1;
   }
 

@@ -36,6 +36,7 @@ const model = (function () {
       summary:
         "A CRM for managing bids by status, from new to archived, alongside products.",
       imageAlt: "Simple CRM system interface",
+      role: "Individual project: stores bids in the browser, filters them by status and category, and updates the counts when a bid is edited.",
       imageSrc: "assets/images/crm.jpg",
       technology: [
         "HTML",
@@ -54,6 +55,7 @@ const model = (function () {
       summary:
         "A Danish site where amateur musicians find each other through ads and play together, filtered by instrument.",
       imageAlt: "Musik Samspil website",
+      role: "Full-stack study project: sign-in with server-side validation, and users can edit only their own orchestras and posts.",
       imageSrc: "assets/images/daos2.jpg",
       technology: [
         "TypeScript",
@@ -73,6 +75,7 @@ const model = (function () {
       summary:
         "A Danish and English website for a salon, with services, gift cards and booking.",
       imageAlt: "Wild Orchid beauty salon website",
+      role: "Available in two languages with React INTL; form submissions are saved and the salon is notified by email.",
       imageSrc: "assets/images/wildorchid.jpg",
       technology: [
         "React.js",
@@ -89,6 +92,7 @@ const model = (function () {
       summary:
         "A study-project webshop with product categories, such as hair removal.",
       imageAlt: "Wild Orchid online shop",
+      role: "Bachelor's final project: a shop with a CMS for up to 600 products, a stock-aware cart, and back-in-stock subscriptions.",
       imageSrc: "assets/images/wildshop.png",
       technology: [
         "Next.js",
