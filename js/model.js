@@ -177,6 +177,22 @@ const model = (function () {
       "Languages: English, Danish, Russian.",
     ],
     experienceTitle: "Experience",
+    code: {
+      variable: "olga",
+      properties: [
+        { key: "race", value: '"human"' },
+        { key: "occupation", value: '"full stack developer"' },
+        { key: "based", value:         '"Greater Copenhagen"' },
+                {
+                  key: "languages",
+                  value: '["English - fluent", "Danish - beginner", "Russian - native"]',
+                },
+                {
+                  key: "hobbies",
+                  value: '["indoor plants", "crocheting", "taking long walks", "sci-fi series"]',
+                },
+      ],
+    },
     experience: [
       { role: "QA Software Engineer", company: "GN Hearing", period: "2026 – now" },
       { role: "Full Stack Developer", company: "Recruitio" },

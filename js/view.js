@@ -178,8 +178,41 @@ const view = (function () {
       experience.append(line);
     });
 
-    section.append(text, experience);
+    section.append(
+      text,
+      createSide(experience, createCodeCard(about.code))
+    );
     return section;
+  }
+
+  function createSide(...children) {
+    const side = createElement("div", "about_side");
+    side.append(...children);
+    return side;
+  }
+
+  function createCodeCard(code) {
+    const block = createElement("pre", "card code_card");
+    block.setAttribute("aria-label", "A few facts about me, written as code");
+    block.append(
+      createElement("span", "code_keyword", "const "),
+      createElement("span", "code_name", code.variable),
+      document.createTextNode(" = {\n")
+    );
+    code.properties.forEach((property) => {
+      block.append(
+        document.createTextNode("  "),
+        createElement("span", "code_key", property.key),
+        document.createTextNode(": "),
+        createElement("span", "code_value", property.value),
+        document.createTextNode(",\n")
+      );
+    });
+    block.append(
+      document.createTextNode("};"),
+      createElement("span", "code_cursor")
+    );
+    return block;
   }
 
   function createContact(contact) {
@@ -203,6 +236,33 @@ const view = (function () {
       );
     renderHeader(data.profile, data.nav);
     renderFooter(data.footer);
+    initReveal();
+  }
+
+  function initReveal() {
+    const reducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+    if (reducedMotion || !("IntersectionObserver" in window)) return;
+
+    const observer = new IntersectionObserver(
+      (entries) =>
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is_visible");
+          observer.unobserve(entry.target);
+        }),
+      { threshold: 0.15 }
+    );
+
+    document
+      .querySelectorAll(".content_section .eyebrow, .content_section h2, .card")
+      .forEach((element) => {
+        const siblings = [...element.parentElement.children];
+        element.style.setProperty("--delay", siblings.indexOf(element) * 90 + "ms");
+        element.classList.add("reveal");
+        observer.observe(element);
+      });
   }
 
   function renderFooter(footer) {
