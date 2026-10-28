@@ -2,50 +2,56 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="Olga Baeva | Portfolio" />
+    <meta property="og:title" content="Olga Baeva | Full Stack Developer" />
     <meta property="og:image" content="assets/images/meta_image.jpg" />
     <meta
       property="og:description"
-      content="Full Stack Web Developer Portfolio"
+      content="I plan, build, test and launch web solutions, from the business need to a polished result."
     />
     <meta property="og:url" content="https://baeva.dk/" />
-    <meta name="description" content="Full Stack Web Developer Portfolio" />
+    <meta
+      name="description"
+      content="Olga Baeva is a full stack developer based in Copenhagen, building websites, APIs and CRM systems."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/main.css" />
-    <title>Olga Baeva | Portfolio</title>
+    <title>Olga Baeva | Full Stack Developer</title>
   </head>
-  <body class="front">
-    <div class="details">
-      <h2>olga baeva</h2>
-      <h4>web developer</h4>
-      <div class="icons">
-        <div class="icon" title="github">
-          <a
-            href="https://github.com/lelekaspb"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img src="assets/icons/github.svg" alt="github profile"
-          /></a>
-        </div>
+  <body class="home_page">
+    <header id="site-header" class="site_header page_width"></header>
+    <main id="home" class="page_width">
+      <noscript>
+        <section class="card noscript_message">
+          <h1>Olga Baeva — full stack developer</h1>
+          <p>
+            This page needs JavaScript to show my projects, skills and
+            experience. You can still reach me directly:
+          </p>
+          <div class="button_row">
+            <a class="button button_primary" href="mailto:olga@baeva.dk"
+              >olga@baeva.dk</a
+            >
+            <a class="button" href="assets/cv/Olga_Baeva_CV.pdf" download
+              >Download CV</a
+            >
+            <a class="button" href="https://github.com/lelekaspb">GitHub</a>
+            <a class="button" href="https://www.linkedin.com/in/olga-baeva/"
+              >LinkedIn</a
+            >
+          </div>
+        </section>
+      </noscript>
+    </main>
+    <footer id="site-footer" class="site_footer page_width"></footer>
 
-        <div class="icon" title="projects">
-          <a href="projects.html"
-            ><img src="assets/icons/portfolio.svg" alt="projects"
-          /></a>
-        </div>
-
-        <div class="icon" title="linkedIn">
-          <a
-            href="https://www.linkedin.com/in/olga-baeva/"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img src="assets/icons/linkedin.svg" alt="linkedin profile"
-          /></a>
-        </div>
-
-        <div class="about"><a href="about.html">about me</a></div>
-      </div>
-    </div>
+    <script src="js/model.js"></script>
+    <script src="js/view.js"></script>
+    <script src="js/controller.js"></script>
   </body>
 </html>
